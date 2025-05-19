@@ -2057,11 +2057,10 @@
       <field type="uint16_t[4]" name="rpm" units="rpm">RPM (eRPM).</field>
       <field type="uint16_t[4]" name="count">count of telemetry packets received (wraps at 65535).</field>
     </message>
-    <message id="187"ssage id="187" name="FORCE_VECTOR_TARGET">
+    <message id="187" name="FORCE_VECTOR_TARGET">
       <description>Force vector target for custom orientation control.</description>
       <field type="uint8_t" name="target_system">System ID</field>
       <field type="uint8_t" name="target_component">Component ID</field>
-      <field type="uint64_t" name="msg_timestamp" >Timestamp from the sender</field>
       <field type="uint64_t" name="msg_seq" >Sequence number of the message</field>
       <field type="float" name="force_x">X component of force vector</field>
       <field type="float" name="force_y">Y component of force vector</field>
