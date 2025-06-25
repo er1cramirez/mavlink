@@ -2069,5 +2069,10 @@
       <field type="float" name="force_derivative_y">Y component of force vector derivative</field>
       <field type="float" name="force_derivative_z">Z component of force vector derivative</field>
     </message>
+    
+    <message id="188" name="QUAT_BODY2NED">
+      <description>Quaternion body to NED frame transformation.</description>
+      <field type="float[4]" name="q">Quaternion (w, x, y, z).</field>
+    </message>
   </messages>
 </mavlink>
