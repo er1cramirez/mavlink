@@ -2059,8 +2059,6 @@
     </message>
     <message id="187" name="FORCE_VECTOR_TARGET">
       <description>Force vector target for custom orientation control.</description>
-      <field type="uint8_t" name="target_system">System ID</field>
-      <field type="uint8_t" name="target_component">Component ID</field>
       <field type="uint64_t" name="msg_seq" >Sequence number of the message</field>
       <field type="float" name="force_x">X component of force vector</field>
       <field type="float" name="force_y">Y component of force vector</field>
@@ -2073,6 +2071,13 @@
     <message id="188" name="QUAT_BODY2NED">
       <description>Quaternion body to NED frame transformation.</description>
       <field type="float[4]" name="q">Quaternion (w, x, y, z).</field>
+    </message>
+
+    <message id="189" name="CUSTOM_VISION_DATA">
+      <description>Custom vision data from Aruco relative pose.</description>
+      <field name="time_usec" type="uint64_t" units="us">Timestamp (synced to UNIX time or since system boot).</field>
+      <field type="float[3]" name="position" units="m">Aruco marker position [x, y, z].</field>
+      <field type="float" name="confidence" units="%">Normalised confidence value from 0 to 100.</field>
     </message>
   </messages>
 </mavlink>
